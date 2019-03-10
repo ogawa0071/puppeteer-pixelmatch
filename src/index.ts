@@ -34,7 +34,7 @@ class PuppeteerPixelmatch extends Command {
     for (let index = 0; index < pathsArray.length; index++) {
       const path = pathsArray[index]
 
-      this.log(`${index}/${pathsArray.length}`)
+      this.log(`${index + 1}/${pathsArray.length}`)
 
       // スクリーンショットを作成
       const sourceUrl = new URL(path, source)
